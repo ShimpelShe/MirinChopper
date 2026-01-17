@@ -1,0 +1,16 @@
+body {
+  background-color: #366;
+  color: #cff;
+  text-align: center;
+  font-family:
+    "Commodore 64 Angled", "Trebuchet MS", "Lucida Sans Unicode",
+    "Lucida Grande", "Lucida Sans", Arial, sans-serif;
+}
+
+#main {
+  background-color: #ffffff10;
+  padding: 4px;
+  border-radius: 4px;
+  margin: 40px;
+  border-top: #cff 8px solid;
+}
