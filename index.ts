@@ -170,34 +170,11 @@ const objects: Array<any> = [
 
 console.log(generateLua(objects));
 
-/* Expected Output:
--- ###================###
--- ### Playur thingis ###
--- ###================###
-if not P1 or not P2 then
-  backToSongWheel("Two players required")
-  return
-end
-for pn = 1, 2 do
-  setupJudgeProxy(PJ[pn], P[pn]:GetChild('Judgement'), pn)
-  setupJudgeProxy(PC[pn], P[pn]:GetChild('Combo'), pn)
-end
-for pn = 1, #PP do
-  PP[pn]:SetTarget(P[pn])
-  P[pn]:hidden(1)
-end
-
--- ###===================###
--- ### My cool modchart! ###
--- ###===================###
-setDefault {1.5, "xmod", 30, "Boost"}
-ease {2, 2, linear, 100, "Drunk", -50, "Tornado"}
-
--- yo how's it going?
-ease {4, 3, linear, 0, "Drunk"}
-ease {7, 4, linear, 100, "Drunk", 30, "Tornado"}
-ease {11, 5, linear, -20, "Drunk", 0, "Tornado"}
-add {16, 2, linear, 20, "Drunk"}
-set {20, -40, "Tornado"}
-reset {25, 3, linear, exclude = {"Drunk"}
-*/
+const timelineCanvas = document.getElementById("timeline") as HTMLCanvasElement;
+const ctx = timelineCanvas.getContext("2d");
+if (ctx) {
+  // Clear canvas
+  ctx.clearRect(0, 0, timelineCanvas.width, timelineCanvas.height);
+  ctx.fillStyle = "#ffffff20";
+  ctx.fillRect(0, 0, timelineCanvas.width, timelineCanvas.height);
+}

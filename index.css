@@ -14,3 +14,41 @@ body {
   margin: 40px;
   border-top: #cff 8px solid;
 }
+
+#modContainer {
+  display: inline-block;
+  background-color: #122;
+  padding: 4px 6px;
+  border-radius: 4px;
+  width: 150px;
+  text-align: left;
+  overflow: hidden;
+}
+
+#modController {
+  display: block;
+  font-size: 20px;
+}
+
+button {
+  background-color: #cff;
+  color: #122;
+  border: none;
+  border-radius: 4px;
+}
+
+button:active {
+  background-color: #122;
+  color: #cff;
+}
+
+button:hover {
+  box-shadow: #cff 0px 0px 2px;
+}
+
+#modLeft,
+#modRight,
+#modAdd,
+#modRem {
+  width: 40px;
+}
